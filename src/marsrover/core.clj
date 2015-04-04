@@ -1,20 +1,5 @@
 (ns marsrover.core)
 
-(defprotocol ToArray
-  (toArray[o])
-)
-
-(defprotocol Move)
-
-(defrecord Rover[direction point]
-  Object
-  (toString[this]
-    (str (:point this) " " direction))
-  ToArray
-  (toArray[this]
-    [(:direction this) (:point this)])
-)
-
 (def directions-right {:north :east
                        :east :south
                        :south :west
