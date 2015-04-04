@@ -53,6 +53,3 @@
 
 (defn rover-exec-str-commands [position str-commands]
   (rover-exec-char-commands position (seq str-commands)))
-
-(defn hola []
-  (println "hola - adeu - ups"))
